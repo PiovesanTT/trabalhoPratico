@@ -38,17 +38,7 @@ and open the template in the editor.
         <i class="fas fa-bars"></i>
       </button>
 
-      <!-- Navbar Search -->
-      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
+      
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
@@ -169,27 +159,27 @@ and open the template in the editor.
           <form>
               <div class="form-group">
                 <label for="exampleInputPlaca">Nome</label>
-                <input type="text" class="form-control" id="exampleInputPlaca" aria-describedby="emailHelp" placeholder="Digite a placa do carro">
+                <input type="text" class="form-control" id="exampleInputPlaca" aria-describedby="emailHelp" placeholder="Digite o nome do cliente">
               </div>
                   <div class="form-group">
                 <label for="exampleInputNome">RG</label>
-                <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="Digite o nome do carro">
+                <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="Digite o RG do cliente">
               </div>
               <div class="form-group">
                 <label for="exampleInputMarca">CPF</label>
-                <input type="text" class="form-control" id="exampleInputMarca" aria-describedby="emailHelp" placeholder="Digite a marca do carro">
+                <input type="text" class="form-control" id="exampleInputMarca" aria-describedby="emailHelp" placeholder="Digite o CPF do cliente">
               </div>
               <div class="form-group">
                 <label for="exampleInputModelo">Endereço</label>
-                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o modelo do carro">
+                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o endereço do cliente">
               </div>
               <div class="form-group">
-                <label for="exampleInputValorSeguro">CNH</label>
-                <input type="number" class="form-control" id="exampleInputValorSeguro" aria-describedby="emailHelp" placeholder="Digite o valor do seguro do carro">
+                <label for="exampleInputModelo">CNH</label>
+                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o Nº da CNH do cliente">
               </div>
               <div class="form-group">
                 <label for="exampleInputValorLocacao">Numero de Dependentes</label>
-                <input type="number" class="form-control" id="exampleInputValorLocacao" aria-describedby="emailHelp" placeholder="Digite o valor da locação do carro">
+                <input type="number" class="form-control" id="exampleInputValorLocacao" aria-describedby="emailHelp" placeholder="Informe o numero ded dependentes do cliente">
               </div>
 
               <button type="submit" class="btn btn-primary">Cadastrar</button>
