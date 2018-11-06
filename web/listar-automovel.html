@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Administração - LocaPlus</title>
+    <title>Listar Automóveis - LocaPlus</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -117,7 +117,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="listar-locacao.html">Listar</a>
-            <a class="dropdown-item" href="cadastrar-locacao.html">Cadastrar</a>
+            <a class="dropdown-item" href="cadastro-locacao.html">Cadastrar</a>
             <a class="dropdown-item" href="listar-locacao.html">Deletar</a>
           </div>
         </li>
@@ -129,7 +129,7 @@
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="listar-clientes.html">Listar</a>
             <a class="dropdown-item" href="cadastrar-cliente.html">Cadastrar</a>
-            <a class="dropdown-item" href="listar-cliente.html">Editar</a>
+            <a class="dropdown-item" href="listar-clientes.html">Editar</a>
             <a class="dropdown-item" href="listar-clientes.html">Deletar</a>
           </div>
         </li>
@@ -140,7 +140,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="listar-funcionario.html">Listar</a>
-            <a class="dropdown-item" href="cadastrar-funcionario.html">Cadastrar</a>
+            <a class="dropdown-item" href="cadastro-funcionario.html">Cadastrar</a>
             <a class="dropdown-item" href="editar-funcionario.html">Editar</a>
             <a class="dropdown-item" href="deletar-funcionario.html">Deletar</a>
           </div>
@@ -169,42 +169,99 @@
             </li>
             <li class="breadcrumb-item active">Overview</li>
           </ol>
-<form>
-    <div class="form-group">
-      <label for="exampleInputPlaca">Placa</label>
-      <input type="text" class="form-control" id="exampleInputPlaca" aria-describedby="emailHelp" placeholder="Digite a placa do carro">
-    </div>
-        <div class="form-group">
-      <label for="exampleInputNome">Nome</label>
-      <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="Digite o nome do carro">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputMarca">Marca</label>
-      <input type="text" class="form-control" id="exampleInputMarca" aria-describedby="emailHelp" placeholder="Digite a marca do carro">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputModelo">Modelo</label>
-      <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o modelo do carro">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputValorSeguro">Valor do Seguro</label>
-      <input type="number" class="form-control" id="exampleInputValorSeguro" aria-describedby="emailHelp" placeholder="Digite o valor do seguro do carro">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputValorLocacao">Valor da Locação</label>
-      <input type="number" class="form-control" id="exampleInputValorLocacao" aria-describedby="emailHelp" placeholder="Digite o valor da locação do carro">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputCor">Cor</label>
-      <input type="number" class="form-control" id="exampleInputCor" aria-describedby="emailHelp" placeholder="Digite a cor do carro">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Ativo?</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Cadastrar</button>
-  </form>
 
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Lista de Automóveis</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Placa</th>
+                      <th>Nome</th>
+                      <th>Marca</th>
+                      <th>Modelo</th>
+                      <th>Valor do Seguro</th>
+                      <th>Valor da Locação</th>
+                      <th>Cor</th>
+                      <th>Ativo?</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Placa</th>
+                      <th>Nome</th>
+                      <th>Marca</th>
+                      <th>Modelo</th>
+                      <th>Valor do Seguro</th>
+                      <th>Valor da Locação</th>
+                      <th>Cor</th>
+                      <th>Ativo?</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>6666-ABC</td>
+                      <td>Fabio Selau</td>
+                      <td>BMW</td>
+                      <td>X1</td>
+                      <td>R$ 900,00</td>
+                      <td>R$ 300,00</td>
+                      <td>Branco</td>
+                      <td>Sim</td>
+                    </tr>
+                    <tr>
+                      <td>6666-ABC</td>
+                      <td>Tonhão</td>
+                      <td>BMW</td>
+                      <td>X6</td>
+                      <td>R$ 2.200,00</td>
+                      <td>R$ 900,00</td>
+                      <td>Preto</td>
+                      <td>Sim</td>
+                    </tr>
+                    <tr>
+                      <td>6666-ABC</td>
+                      <td>Andrei</td>
+                      <td>Porsche</td>
+                      <td>Cayman</td>
+                      <td>R$ 3.200,00</td>
+                      <td>R$ 950,00</td>
+                      <td>Branco</td>
+                      <td>Não</td>
+                    </tr>
+                    <tr>
+                      <td>6666-ABC</td>
+                      <td>Tonhão</td>
+                      <td>BMW</td>
+                      <td>X6</td>
+                      <td>R$ 2.200,00</td>
+                      <td>R$ 900,00</td>
+                      <td>Preto</td>
+                      <td>Sim</td>
+                    </tr>
+                    <tr>
+                      <td>6666-ABC</td>
+                      <td>Tonhão</td>
+                      <td>BMW</td>
+                      <td>X6</td>
+                      <td>R$ 2.200,00</td>
+                      <td>R$ 900,00</td>
+                      <td>Preto</td>
+                      <td>Sim</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
