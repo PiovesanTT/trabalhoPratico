@@ -12,7 +12,7 @@ and open the template in the editor.
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Administração - LocaPlus</title>
+        <title>AdministraÃ§Ã£o - LocaPlus</title>
 
         <!-- Bootstrap core CSS-->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@ and open the template in the editor.
         ?>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">Administração</a>
+      <a class="navbar-brand mr-1" href="index.html">AdministraÃ§Ã£o</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -144,8 +144,8 @@ and open the template in the editor.
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="listar-cliente.php">Listar</a>
             <a class="dropdown-item" href="cadastrar-cliente.php">Cadastrar</a>
-            <a class="dropdown-item" href="editar-clientes.html">Editar</a>
-            <a class="dropdown-item" href="deletar-clientes.html">Deletar</a>
+            <a class="dropdown-item" href="editar-cliente.php">Editar</a>
+            <a class="dropdown-item" href="excluir-cliente.php">Deletar</a>
           </div>
         </li>
         <li class="nav-item">
@@ -745,7 +745,7 @@ and open the template in the editor.
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
+              <span>Copyright Â© Your Website 2018</span>
             </div>
           </div>
         </footer>
@@ -768,7 +768,7 @@ and open the template in the editor.
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+              <span aria-hidden="true">Ã—</span>
             </button>
           </div>
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>

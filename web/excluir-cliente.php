@@ -12,7 +12,7 @@ and open the template in the editor.
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Cadastrar Cliente</title>
+        <title>Excluir Cliente</title>
 
         <!-- Bootstrap core CSS-->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@ and open the template in the editor.
         <!-- Custom styles for this template-->
         <link href="css/sb-admin.css" rel="stylesheet">
     </head>
+    
     <body id="page-top">
         <?php
         // put your code here
@@ -132,8 +133,8 @@ and open the template in the editor.
             <span>Clientes</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="listar-cliente.php">Listar</a>
-            <a class="dropdown-item" href="cadastrar-cliente.html">Cadastrar</a>
+              <a class="dropdown-item" href="listar-cliente.php">Listar</a>
+            <a class="dropdown-item" href="cadastrar-cliente.php">Cadastrar</a>
             <a class="dropdown-item" href="editar-cliente.php">Editar</a>
             <a class="dropdown-item" href="excluir-cliente.php">Deletar</a>
           </div>
@@ -152,37 +153,69 @@ and open the template in the editor.
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Cliente</a>
+              <a href="#">Clientes</a>
             </li>
-            <li class="breadcrumb-item active">Cadastro</li>
+            <li class="breadcrumb-item active">Excluir</li>
           </ol>
           <form>
-              <div class="form-group">
-                <label for="exampleInputPlaca">Nome</label>
-                <input type="text" class="form-control" id="exampleInputPlaca" aria-describedby="emailHelp" placeholder="Digite o nome do cliente">
-              </div>
-                  <div class="form-group">
-                <label for="exampleInputNome">RG</label>
-                <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="Digite o RG do cliente">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputMarca">CPF</label>
-                <input type="text" class="form-control" id="exampleInputMarca" aria-describedby="emailHelp" placeholder="Digite o CPF do cliente">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputModelo">Endereço</label>
-                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o endereço do cliente">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputModelo">CNH</label>
-                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o Nº da CNH do cliente">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputValorLocacao">Numero de Dependentes</label>
-                <input type="number" class="form-control" id="exampleInputValorLocacao" aria-describedby="emailHelp" placeholder="Informe o numero ded dependentes do cliente">
+            <div class="container-fluid">
+
+
+
+
+
+
+              <!-- DataTables Example -->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-table"></i>
+                  Escolha um cliente para Excluir</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Nome</th>
+                          <th>RG</th>
+                          <th>CPF</th>
+                          <th>Endereço</th>
+                          <th>CNH</th>
+                          <th>Nº de Dependentes</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>Nome</th>
+                          <th>RG</th>
+                          <th>CPF</th>
+                          <th>Endereço</th>
+                          <th>CNH</th>
+                          <th>Nº de Dependentes</th>
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>3.303.997</td>
+                          <td>999.999.999-99</td>
+                          <td>Amandaina Distrito de Ivinhema</td>
+                          <td>99559995</td>
+                          <td>3</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
               </div>
 
-              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <!-- /.container-fluid -->
+
+            
+
+
             </form>
 
 
@@ -229,7 +262,5 @@ and open the template in the editor.
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
-
-        
     </body>
 </html>
