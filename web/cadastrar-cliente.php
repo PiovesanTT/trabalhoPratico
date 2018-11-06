@@ -157,32 +157,34 @@ and open the template in the editor.
             <li class="breadcrumb-item active">Cadastro</li>
           </ol>
           <form>
-              <div class="form-group">
+              <div class="form-row">
+              <div class="form-group col-md-6">
                 <label for="exampleInputPlaca">Nome</label>
-                <input type="text" class="form-control" id="exampleInputPlaca" aria-describedby="emailHelp" placeholder="Digite o nome do cliente">
+                <input type="text" class="form-control" id="exampleInputPlaca" placeholder="Digite o nome do cliente">
               </div>
-                  <div class="form-group">
+                  <div class="form-group col-md-6">
                 <label for="exampleInputNome">RG</label>
-                <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" placeholder="Digite o RG do cliente">
+                <input type="text" class="form-control" id="exampleInputNome" placeholder="Digite o RG do cliente">
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-4">
                 <label for="exampleInputMarca">CPF</label>
-                <input type="text" class="form-control" id="exampleInputMarca" aria-describedby="emailHelp" placeholder="Digite o CPF do cliente">
+                <input type="text" class="form-control" id="exampleInputMarca" placeholder="Digite o CPF do cliente">
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-8">
                 <label for="exampleInputModelo">Endereço</label>
-                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o endereço do cliente">
+                <input type="text" class="form-control" id="exampleInputModelo"  placeholder="Digite o endereço do cliente">
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-8">
                 <label for="exampleInputModelo">CNH</label>
-                <input type="text" class="form-control" id="exampleInputModelo" aria-describedby="emailHelp" placeholder="Digite o Nº da CNH do cliente">
+                <input type="text" class="form-control" id="exampleInputModelo"  placeholder="Digite o Nº da CNH do cliente">
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-4">
                 <label for="exampleInputValorLocacao">Numero de Dependentes</label>
-                <input type="number" class="form-control" id="exampleInputValorLocacao" aria-describedby="emailHelp" placeholder="Informe o numero ded dependentes do cliente">
+                <input type="number" class="form-control" id="exampleInputValorLocacao"  placeholder="Informe o numero de dependentes do cliente">
               </div>
 
               <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
             </form>
 
 
